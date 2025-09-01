@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GridBack from "./components/common/GridBack";
 import NavBar from "./components/common/NavBar";
+import BannerBack from "./components/home/BannerBack";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
       >
         <GridBack>
           <NavBar/>
-        {children}
+        <BannerBack>{children}</BannerBack>
         </GridBack>
       </body>
     </html>
