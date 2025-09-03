@@ -8,7 +8,7 @@
 
   --font-headerFont:  "Righteous", sans-serif;
 
-  --font-textFont:  "PT Sans", sans-serif;
+  --font-textFont:   "Roboto", sans-serif;
 }
 
 @layer utilities {
@@ -37,10 +37,14 @@
 }
 
 body {
-  background-color: #f5f5f5;
-  color: rgb(53, 52, 52);
-
+  background-color: #ffffff;
+  
 }
+.custom-color-mixer{
+
+  color: rgb(53, 52, 52);
+}
+
 
 .nav-custom-shadow {
   box-shadow: rgb(0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.666) 0px 7px 13px -3px,

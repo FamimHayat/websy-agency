@@ -25,6 +25,7 @@ const NavBar = () => {
             <h2 className="flex text-[20px] md:text-[22px] lg:text-[26px] font-bold text-black   font-headerFont ">
               <span className="flex justify-center items-end text-light bg-black h-10 w-10 rounded-full">w</span>ebsy
             </h2>
+            
           </div>
 
           {/* Desktop Menu */}

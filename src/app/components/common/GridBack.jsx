@@ -4,7 +4,9 @@ const GridBack = ({ children }) => {
   return (
     <div className="relative w-full min-h-screen">
    
-      <div className="absolute inset-0  grid grid-cols-7 sm:grid-cols-10 h-full">
+      <div className="absolute inset-0  grid grid-cols-8 sm:grid-cols-12 h-full">
+        <div className="  border-r border-[#0e0e0e25]"></div>
+        <div className="  border-r border-[#0e0e0e25]"></div>
         <div className="  border-r border-[#0e0e0e25]"></div>
         <div className="  border-r border-[#0e0e0e25]"></div>
         <div className="  border-r border-[#0e0e0e25]"></div>

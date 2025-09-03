@@ -2,7 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import GridBack from "./components/common/GridBack";
 import NavBar from "./components/common/NavBar";
-import BannerBack from "./components/home/BannerBack";
+import CustomCursor from "./components/common/CustomCursor";
+import ScrollToTop from "./components/common/ScrollToTop";
+import AosInit from "./components/common/AosInIt";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,22 +25,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link 
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap" 
-          rel="stylesheet" 
-          preconnect="true"
-        />
+       <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* BannerBack as the global background */}
-        <BannerBack>
-          {/* All other content sits on top */}
+        <AosInit/>
+        <ScrollToTop/>
+          <CustomCursor/>
           <GridBack>
             <NavBar />
             {children}
           </GridBack>
-        </BannerBack>
       </body>
     </html>
   );
