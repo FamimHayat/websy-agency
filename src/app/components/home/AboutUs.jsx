@@ -4,14 +4,14 @@ import Image from 'next/image';
 import BrandButton from '../common/BrandButton';
 
 const AboutUs = () => (
-<section className='h-dvh overflow-hidden'>
+<section className='h-dvh overflow-hidden bg-transparent pb-10'>
   <div className='w-full flex justify-center items-center mb-10 md:hidden'>
     <Header headerText={"about"} className='text-6xl'/>
   </div>
   <div className='w-full  h-full md:h-[calc(100dvh-100px)]  grid grid-cols-1 md:grid-cols-2   md:gap-10'>
 
-    <div className="relative w-full h-[20dvh] md:h-full">
-      <Image src="/about-me.jpg" alt="model" fill style={{ objectFit: 'cover' }} loading="lazy" />
+    <div>
+      <Image src={'/about-me.jpg'} height={400} width={500} layout='responsive' alt='model' className=''/>
     </div>
 
 
