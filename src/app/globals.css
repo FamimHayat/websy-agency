@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@utility container{
+  margin: 0 auto;
+}
+
 
 @theme {
   --color-brand: #B4E50D;
@@ -114,7 +118,6 @@ body {
   background-color: #B4E50D;
   border-radius: 50%;
   transition: all linear 0.15s;
-
   z-index: -1; 
 }
 
@@ -123,6 +126,12 @@ body {
   width: 100%;
   border-radius: 0%;
 }
+
+.textBordered {
+  color: #ffffff; 
+  -webkit-text-stroke: 2px #2121211f;
+}
+
 
 
 
