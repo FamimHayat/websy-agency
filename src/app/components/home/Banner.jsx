@@ -1,9 +1,13 @@
 import React from 'react';
+import { PiSealCheckFill } from "react-icons/pi";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa6";
+
 
 
 const Banner = () => {
   return (
-    <section className="py-15 px-3 sm:px-0 overflow-hidden h-[calc(100vh-75px)] 
+    <section className="py-15 px-3 sm:px-0 overflow-hidden sm:h-[calc(100vh-75px)] 
     ">
      
       <div>
@@ -15,9 +19,56 @@ const Banner = () => {
           </span>
         </h2>
 
-        <h2 className='relative sm:hidden text-[calc(50px+15vw)] font-headerFont text-center text-brand text-shadow-light'>websy</h2>
-        <p className='sm:hidden pt-5 text-7xl font-textFont text-dark font-semibold text-center text-shadow-light'> we are creative <br/>web agency</p>
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className='relative flex flex-col gap-10'>
+  
+        <h2 className=' sm:hidden text-[calc(50px+30vw)] font-headerFont text-center text-brand text-shadow-light leading-20 pb-10'><span>web</span><br/><span>sy</span> </h2>
+        <p className='sm:hidden pt-5 text-5xl font-textFont text-dark/90 font-semibold text-center text-shadow-light'> we are creative <br/>web agency</p>
+         
+         
+</div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <div className=' sm:flex gap-3 justify-center  pt-12 md:pt-20 lg:pt-40'>
+          <p className='flex gap-2 justify-center items-center text-md md:text-lg text-dark md:font-semibold font-textFont'><PiSealCheckFill/> FullStack web  agency</p>
+          <span className='tracking-tighter hidden md:flex'>-------------------</span>
+          <span className='tracking-tighter hidden md:hidden sm:flex'>---------</span>
+          <p className='flex gap-2 justify-center items-center text-md md:text-lg text-dark md:font-semibold font-textFont'><FaLocationDot/> Located at london</p>
+          <span className='tracking-tighter hidden md:flex'>-------------------</span>
+          <span className='tracking-tighter hidden md:hidden sm:flex'>---------</span>
+          <p className='flex gap-2 justify-center items-center text-md md:text-lg text-dark md:font-semibold font-textFont'><FaHeart/> Trusted agency</p>
+         </div>
       </div>
     </section>
   );
